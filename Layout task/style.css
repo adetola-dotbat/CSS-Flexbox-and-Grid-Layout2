@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --color-bringht-orange:hsl(31, 77%, 52%);
+    --color-dark-cyan:hsl(184, 100%, 22%);
+    --color-veryDark-cyan: hsl(179, 100%, 13%);
+
+    --color-text:hsla(0, 0%, 100%, 0.75);
+    --light-gray-background:hsl(0, 0%, 95%);
+    --light-gray-headings:hsl(0, 0%, 95%);
+    --light-gray-buttons:hsl(0, 0%, 95%);
+
+    --font-size:15px;
+    --font-weights-s:400;
+    --font-weights-b:700;
+
+    --color-light:rgba(132, 129, 200, 0.18);
+    --box-shadow:0 2rem 3rem var(--color-light);
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    appearance: none;
+    border:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    background: var(--light-gray-background);
+    user-select: none;
+    overflow-x: hidden;
+  font-family: 'Lexend Deca', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    font-weight: 700;
+    color:var(--light-gray-headings);
+    padding-top: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 34px;
+}
+p{
+    line-height: 1.5rem;
+    padding-top: 2rem;
+}
+.container{
+    display: grid;
+    width:70%;
+    margin:0 auto;
+    grid-template-columns: 15rem 15rem 15rem;
+    border: 0px solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+
+}
+
+
+.first, .second, .third{
+    height: 70vh;
+    padding: 4rem;
+    color:var(--color-text);
+    
+}
+
+.container .first {
+    background-color:var(--color-bringht-orange);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.container .second{
+    background-color:var(--color-dark-cyan);
+}
+
+.container .third{
+    background-color:var(--color-veryDark-cyan);
+    border-radius:0 0.5rem 0.5rem 0;
+}
+
+.container .first > button{
+    color:var(--color-bringht-orange);
+   
+}
+.container .second > button{
+    color:var(--color-dark-cyan);
+   
+}
+.container .third > button{
+    color:var(--color-veryDark-cyan);
+   
+}
+.container .first > button:hover{
+    background: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--light-gray-buttons);
+   
+}
+.container .second > button:hover{
+    background: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--light-gray-buttons);
+   
+}
+
+.container .third > button:hover{
+    background: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--light-gray-buttons);
+   
+}
+
+
+button{
+    width: max-content;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: 1px solid var(--light-gray-buttons);
+}
+
+
+.btn-primary {
+    background:var(--color-dark-cyan);
+    color:var(--light-gray-background);
+}
